@@ -1,8 +1,14 @@
 import React from 'react';
-import MovieList from "./pages/MovieList";
+import {RouterProvider} from "react-router-dom";
+import router from "./router";
+import Header from "./components/Header";
 const App = () => {
     return (
-        <MovieList />
+        <>
+            <Header />
+            <RouterProvider router={router} />
+        </>
+
     );
 };
 
